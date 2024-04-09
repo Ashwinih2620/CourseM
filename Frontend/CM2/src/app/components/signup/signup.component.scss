@@ -1,0 +1,51 @@
+::ng-deep .mat-form-field-appearance-outline {
+    padding: 0em 0 0em 0 !important;
+}
+
+.full-width{
+    width: 90%;
+    height: 10%;
+    margin-left: 10px;
+}
+// .mat-form-field {
+//     width: 300px !important; /* Adjust the width as needed */
+//   }
+  
+//   /* Custom styles for input within mat-form-field */
+//   .mat-input-element {
+//     height: 10% !important; /* Adjust the height as needed */
+//   }
+//   .mat-form-field-appearance-outline {
+//     font-size: 14px !important; /* Adjust the font size as needed */
+//     height: 10% !important;
+//   }
+  
+.page-background {
+    background-color: rgba(57, 57, 57, 0.60); /* 75% opacity */
+    /* Add any other styling you want for the whole page */
+  }
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    // margin-top: 20px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff4171;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3F51B5;
+  }
+  
+

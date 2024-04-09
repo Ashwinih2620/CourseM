@@ -1,0 +1,40 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthService {
+  private isLoggedIn: boolean = false;
+  private baseUrl="http://localhost:8080";
+
+
+  constructor(private _http:HttpClient) { }
+
+  public checkAdminLogin(user1:string , pass1:string)
+  {
+    let httpParams = new HttpParams();
+    httpParams =  httpParams.append("user",user1);
+    httpParams = httpParams.append("pass",pass1);
+
+    return this._http.get(`${this.baseUrl}/adminlogin/check1`,{params:httpParams})
+  }
+
+  // login(username: string, password: string): boolean {
+  //   // Simulate authentication logic (you can replace this with your own logic)
+  //   if (username === 'Admin' && password === 'User@123') {
+  //     this.isLoggedIn = true;
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
+
+  // logout(): void {
+  //   this.isLoggedIn = false;
+  // }
+
+  // isAuthenticated(): boolean {
+  //   return this.isLoggedIn;
+  // }
+}

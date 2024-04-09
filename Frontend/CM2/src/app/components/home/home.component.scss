@@ -1,0 +1,79 @@
+ul {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    // 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+}
+
+ul li a {
+    height: 10rem;
+    width: 20rem;
+    border: 3px solid whitesmoke;
+    // border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    margin-top: 10px;
+    margin-left: 50px;
+    // background-color: gray;
+}
+
+li a:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+body {
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    // background-attachment: fixed;
+    background-position: center;
+    // padding: 20px;
+    /* Adjust other background properties as needed */
+}
+:host {
+    overflow: hidden;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* app.component.css */
+
+// .background-container {
+//     width: 50%; /* Set the width to cover the first half of the page */
+//     height: 100vh; /* Set height to full viewport height */
+//     background-image: url('/assets/images/images.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+//     background-size: cover; /* Cover the container with the background image */
+//     background-position: center; /* Center the background image */
+//     float: left; /* Float the container to the left */
+//   }
+
+.background-container {
+    width: 50%; /* Set the width to cover the first half of the page */
+    height: 100vh; /* Set height to full viewport height */
+    background-image: url('/assets/images/download.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Cover the container with the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: left top; /* Align the background image to the left and top */
+    float: left; /* Float the container to the left */
+    display: flex; /* Use flexbox to ensure content stretches to full height */
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .other-content {
+    width: 50%; /* Set the width to occupy the second half of the page */
+    height: 100vh; /* Set height to full viewport height */
+    float: right; /* Float the content to the right */
+  }
+  .page-background {
+    background-color: rgba(57, 57, 57, 0.60); /* 75% opacity */
+    /* Add any other styling you want for the whole page */
+  }
+

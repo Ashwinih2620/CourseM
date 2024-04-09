@@ -1,0 +1,60 @@
+
+
+
+<body class="page-background">
+    <div class="container-fluid">
+      <div class="login-container">            
+        <div class="col-md-6 offset-md-3">
+                <h2>Add course</h2>
+                <form [formGroup]="courseForm" (ngSubmit)="register()">
+                    <!-- <div class="mt-2">
+                        <mat-form-field class="full-width d-block" appearance="outline">
+                            <mat-label>Name:</mat-label>
+                            <input mat-input matInput type="text" mat-input formControlName="name">
+                            <mat-error *ngIf="signupForm.get('name')?.hasError('required')">
+                                name is Required!
+                            </mat-error>
+                        </mat-form-field>
+                    </div> -->
+                    <div class="mt-2">
+                        <mat-form-field class="full-width d-block" appearance="outline">
+                            <mat-label>Course name:</mat-label>
+                            <input mat-input matInput type="text" mat-input formControlName="courseName">
+                            <mat-error *ngIf="courseForm.get('courseName')?.hasError('required')">
+                                Coursename is Required!
+                            </mat-error>
+                           
+                          
+                        </mat-form-field>
+                    </div>
+                    <div class="mt-2">
+                      <mat-form-field class="full-width d-block" appearance="outline">
+                          <mat-label>Price:</mat-label>
+                          <input mat-input matInput type="text" mat-input formControlName="price">
+                          <mat-error *ngIf="courseForm.get('price')?.hasError('required')">
+                            Price is Required!
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+                  <div class="mt-2">
+                    <mat-form-field class="full-width d-block" appearance="outline">
+                        <mat-label>Description:</mat-label>
+                        <input mat-input matInput type="text" mat-input formControlName="description">
+                        <mat-error *ngIf="courseForm.get('description')?.hasError('required')">
+                            Description is Required!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            
+                    <!-- <button type="submit" [disabled]="!signupForm.valid" color="primary">Signup</button> -->
+                    <button type="submit" class="btn btn-primary">Add</button>
+
+                    <!-- <button type="submit" style="margin-top: 10px;" (click)="login()">Login</button> -->
+
+            
+                </form>
+            </div>
+
+        </div>
+    </div>
+  </body>

@@ -1,0 +1,17 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of rows">
+        <td>{{ row.id }}</td>
+        <td contenteditable="true">{{ row.name }}</td>
+        <td contenteditable="true">{{ row.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

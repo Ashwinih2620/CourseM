@@ -1,0 +1,35 @@
+<!-- <button type="submit" color="primary" mat-raised-button class="ml-2 mr-1 button-container" (click)="saveRow()"
+tooltipPosition="top" pTooltip="Save" ><mat-icon
+    class="action-icon ">save</mat-icon></button>
+    <button (click)="addRow()">Add</button> -->
+    <!-- <button (click)="saveRow()">Save</button> -->
+
+
+ <body class="page-background" style="padding-top:10px">
+
+    <div id="wrapper" style="padding-top:10px" >
+      <h1 style="text-align: center;">User Details</h1>
+
+      <table id="keywords" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th><span>User ID</span></th>
+            <th><span>Username</span></th>
+            <th><span>Password</span></th>
+            <th><span>Mobile</span></th>
+            <th><span>Action</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of deos; let i = index ">
+            <td>{{data.userId}}</td>
+            <td>{{data.username}}</td>
+            <td>{{data.password}}</td>
+            <td>{{data.mobile}}</td>
+            <td ><i (click)="deleteDeos(data.userId)" class="fa fa-trash" aria-hidden="true"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </body> 

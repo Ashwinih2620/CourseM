@@ -1,0 +1,9 @@
+<div class="container text-left page-background" style="padding-top: 10px;">
+    <button type="submit" mat-raised-button color="primary" (click)="onClickUsers()">Users</button>
+    <button style="margin-left: 10px;" type="reset" mat-raised-button color="accent" (click)="onClick()">Courses</button>
+    <button type="submit" style="margin-left: 75%;" mat-raised-button color="primary" (click)="goback()">Logout</button>
+</div>
+<app-user-dashboard *ngIf="isUser">
+</app-user-dashboard>
+<app-course-dashboard *ngIf="isCourse"> 
+     </app-course-dashboard>

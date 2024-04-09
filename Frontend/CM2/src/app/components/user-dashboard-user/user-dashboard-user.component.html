@@ -1,0 +1,41 @@
+<!-- <button type="submit" color="primary" mat-raised-button class="ml-2 mr-1 button-container" (click)="saveRow()"
+tooltipPosition="top" pTooltip="Save" ><mat-icon
+    class="action-icon ">save</mat-icon></button>
+    <button (click)="addRow()">Add</button> -->
+<!-- <button (click)="saveRow()">Save</button> -->
+
+
+
+
+<body class="page-background">
+  <div class="container text-left" style="padding-top: 10px;">
+    <button type="submit" style="margin-left: 75%;" mat-raised-button color="primary" (click)="goback()">Logout</button>
+
+    <!-- <button style="margin-left: 10px;" type="reset" mat-raised-tton color="accent" (click)="onClick()">Courses</button> -->
+  </div>
+  <div id="wrapper">
+    <h1 style="text-align: center;">Course Details:</h1>
+
+    <table id="keywords" cellspacing="0" cellpadding="0">
+      <thead>
+        <tr>
+          <th><span>Course ID</span></th>
+          <th><span>Coursename</span></th>
+          <th><span>Price</span>
+          <th><span>Description</span></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of deos; let i = index ">
+          <td>{{data.courseId}}</td>
+          <td>{{data.courseName}}</td>
+          <td>{{data.price}}</td>
+          <td>{{data.description}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
